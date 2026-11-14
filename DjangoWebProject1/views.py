@@ -9,13 +9,13 @@ def news(request, extra=None):
     name = request.GET.get('name', 'Олександр')
     return render(request, 'news/news.html', {'name': name})
 
-def management(request):
+def management(request, extra=None):
     return render(request, 'management/management.html')
 
-def about(request):
+def about(request, extra=None):
     return render(request, 'about/about.html')
 
-def contacts(request):
+def contacts(request, extra=None):
     return render(request, 'contacts/contacts.html')
 
 def about_2020(request):
