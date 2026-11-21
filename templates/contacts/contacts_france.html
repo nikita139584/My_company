@@ -1,0 +1,47 @@
+{% extends 'nav.html' %}
+
+{% block title %}Филиал во Франции{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+
+        <span class="overline">OUR BRANCHES / FRANCE</span>
+        <h1>Филиал во <span class="text-gradient">Франции</span></h1>
+        <p class="lead">Наш французский офис находится в Париже.</p>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с французским филиалом:</p>
+                <a href="mailto:francefilialcompany@gmail.com" class="text-accent">
+                    francefilialcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Париж, Франция</p>
+                <p>Демонстрационный адрес: 10 Rue de la Paix, Paris.</p>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
+            <div class="card">
+                <p>Основной номер: +33 1 99 00 00 01</p>
+                <p>Отдел обслуживания: +33 1 99 00 00 02</p>
+                <p>Отдел сотрудничества: +33 1 99 00 00 03</p>
+                <span class="caption">Все номера демонстрационные.</span>
+            </div>
+        </div>
+
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+    </div>
+</section>
+{% endblock %}

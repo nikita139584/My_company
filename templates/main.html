@@ -1,8 +1,58 @@
 {% extends 'nav.html' %}
 
-{% block title %}Головна сторінка{% endblock %}
-
 {% block content %}
-<h1>Головна сторінка</h1>
-<p>Ласкаво просимо!</p>
+<section class="section">
+    <div class="container">
+        <span class="overline">Добро пожаловать</span>
+
+        <h1 class="text-gradient">
+            Международная компания
+        </h1>
+
+        <p class="lead">
+            Мы объединяем профессионалов, развиваем международное
+            сотрудничество и создаём новые возможности для бизнеса.
+        </p>
+
+        <div class="grid grid-3">
+            <div class="card card-glow">
+                <h2>Новости</h2>
+                <p>
+                    Следите за последними событиями, достижениями
+                    и новостями нашей компании.
+                </p>
+                <a href="/news/" class="btn btn-primary">Подробнее</a>
+            </div>
+
+            <div class="card">
+                <h2>Руководство</h2>
+                <p>
+                    Познакомьтесь с командой руководителей,
+                    отвечающих за развитие организации.
+                </p>
+                <a href="/management/" class="btn btn-primary">Подробнее</a>
+            </div>
+
+            <div class="card">
+                <h2>О компании</h2>
+                <p>
+                    Узнайте больше о нашей истории, деятельности
+                    и основных принципах работы.
+                </p>
+                <a href="/about/" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Наши международные филиалы</h2>
+            <p>
+                Компания развивает деятельность в нескольких странах
+                и продолжает расширять своё международное присутствие.
+            </p>
+            <a href="/contacts/" class="btn btn-secondary">
+                Контактная информация
+            </a>
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'nav.html' %}
+
+{% block title %}Филиал в Украине{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+
+        <span class="overline">OUR BRANCHES / UKRAINE</span>
+        <h1>Филиал в <span class="text-gradient">Украине</span></h1>
+        <p class="lead">Украинский филиал компании находится в Киеве.</p>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с украинским филиалом:</p>
+                <a href="mailto:ukrainefilialcompany@gmail.com" class="text-accent">
+                    ukrainefilialcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Киев, Украина</p>
+                <p>Демонстрационный адрес: 10 Khreshchatyk Street, Kyiv.</p>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
+            <div class="card">
+                <p>Основной номер: +380 00 000 00 01</p>
+                <p>Отдел обслуживания: +380 00 000 00 02</p>
+                <p>Отдел сотрудничества: +380 00 000 00 03</p>
+                <span class="caption">Все номера демонстрационные.</span>
+            </div>
+        </div>
+
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+    </div>
+</section>
+{% endblock %}

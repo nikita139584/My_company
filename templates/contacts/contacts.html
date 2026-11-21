@@ -1,7 +1,74 @@
 {% extends 'nav.html' %}
 
-{% block title %}Головна сторінка{% endblock %}
+{% block title %}Контакты компании{% endblock %}
 
 {% block content %}
-<h1>Контакты </h1>
+<section class="section">
+    <div class="container">
+
+        <div class="text-center animate-fade-up">
+            <span class="overline">GET IN TOUCH</span>
+            <h1>Свяжитесь с <span class="text-gradient">нами</span></h1>
+            <p class="lead">Мы всегда открыты для сотрудничества и новых возможностей.</p>
+        </div>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>По общим вопросам обращайтесь к нашей центральной команде.</p>
+                <a href="mailto:mainemailcompany@gmail.com" class="text-accent">
+                    mainemailcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">PHONE</span>
+                <h3>Телефон</h3>
+                <p>Центральный демонстрационный номер компании:</p>
+                <p class="text-accent">+49 000 0000000</p>
+                <span class="caption">Номер указан исключительно для демонстрации.</span>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2 class="text-center">Наши филиалы</h2>
+            <p class="text-center">Компания представлена в нескольких странах.</p>
+
+            <div class="grid grid-3 mt-6">
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Франция</h4>
+                    <p>Филиал в Париже.</p>
+                    <a href="/contacts/france" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Австрия</h4>
+                    <p>Филиал в Вене.</p>
+                    <a href="/contacts/austria" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Украина</h4>
+                    <p>Филиал в Киеве.</p>
+                    <a href="/contacts/ukraine" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card text-center mt-6">
+            <h3>Расположение наших офисов</h3>
+            <p>Посмотрите расположение филиалов компании.</p>
+            <a href="/contacts/map" class="btn btn-primary">Посмотреть карту</a>
+        </div>
+
+    </div>
+</section>
 {% endblock %}

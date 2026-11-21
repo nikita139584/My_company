@@ -30,6 +30,15 @@ def contacts_map(request):
 def contacts_us(request):
     return render(request, 'contacts/contacts_us.html')
 
+def contacts_france(request):
+    return render(request, 'contacts/contacts_france.html')
+
+def contacts_ukrain(request):
+    return render(request, 'contacts/contacts_ukrain.html')
+
+def contacts_austria(request):
+    return render(request, 'contacts/contacts_austria.html')
+
 def management_director(request):
     return render(request, 'management/management_director.html')
 
