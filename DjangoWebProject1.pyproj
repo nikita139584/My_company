@@ -65,23 +65,16 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="static\favicon.ico" />
-    <Content Include="templates\contacts\contacts_austria.html" />
-    <Content Include="templates\contacts\contacts_france.html" />
-    <Content Include="templates\contacts\contacts_ukrain.html" />
     <Content Include="templates\false\403.html" />
     <Content Include="templates\false\404.html" />
     <Content Include="templates\about\about.html" />
     <Content Include="templates\contacts\contacts.html" />
-    <Content Include="templates\contacts\contacts_map.html" />
-    <Content Include="templates\contacts\contacts_us.html" />
     <Content Include="templates\management\management.html" />
-    <Content Include="templates\management\management_director.html" />
     <Content Include="templates\news\news.html" />
     <Content Include="templates\main.html" />
     <Content Include="templates\nav.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="templates\news\news_2026.html" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.14" />

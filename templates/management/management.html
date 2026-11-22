@@ -1,63 +1,345 @@
 {% extends 'nav.html' %}
 
+{% block title %}
+    {% if extra == 'france' %}
+        Филиал во Франции
+    {% elif extra == 'austria' %}
+        Филиал в Австрии
+    {% elif extra == 'ukraine' %}
+        Филиал в Украине
+    {% elif extra == 'us' %}
+        Филиал в США
+    {% elif extra == 'map' %}
+        Карта филиалов
+    {% else %}
+        Контакты компании
+    {% endif %}
+{% endblock %}
+
 {% block content %}
 <section class="section">
     <div class="container">
-        <span class="overline">Наша команда</span>
-        <h1 class="text-gradient">Руководство компании</h1>
 
-        <p class="lead">
-            Наша компания объединяет опытных специалистов, которые отвечают
-            за развитие бизнеса и работу международных филиалов.
-        </p>
+        {% if extra == 'france' %}
 
-        <div class="grid grid-3">
+        <span class="overline">OUR BRANCHES / FRANCE</span>
+        <h1>Филиал во <span class="text-gradient">Франции</span></h1>
+        <p class="lead">Наш французский офис находится в Париже.</p>
+
+        <div class="grid grid-2 mt-8">
+
             <div class="card card-glow">
-                <span class="badge">Генеральный директор</span>
-                <h2>Сташко Никита Сергеевич</h2>
-                <p>Общее руководство и стратегическое развитие компании.</p>
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с французским филиалом:</p>
+                <a href="mailto:francefilialcompany@gmail.com" class="text-accent">
+                    francefilialcompany@gmail.com
+                </a>
             </div>
 
             <div class="card">
-                <span class="badge">Финансовый директор</span>
-                <h2>Коваленко Андрей Викторович</h2>
-                <p>Финансовое планирование и контроль бюджета.</p>
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Париж, Франция</p>
+                <p>Демонстрационный адрес: 10 Rue de la Paix, Paris.</p>
             </div>
 
-            <div class="card">
-                <span class="badge">Операционный директор</span>
-                <h2>Мельник Александр Иванович</h2>
-                <p>Организация ежедневной деятельности компании.</p>
-            </div>
+        </div>
 
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
             <div class="card">
-                <span class="badge">Директор по персоналу</span>
-                <h2>Шевченко Мария Олеговна</h2>
-                <p>Работа с сотрудниками и развитие команды.</p>
-            </div>
-
-            <div class="card">
-                <span class="badge">Технический директор</span>
-                <h2>Бондаренко Дмитрий Павлович</h2>
-                <p>Развитие технической инфраструктуры.</p>
-            </div>
-
-            <div class="card">
-                <span class="badge">Директор по продажам</span>
-                <h2>Ткаченко Елена Владимировна</h2>
-                <p>Работа с клиентами и развитие продаж.</p>
+                <p>Основной номер: +33 1 99 00 00 01</p>
+                <p>Отдел обслуживания: +33 1 99 00 00 02</p>
+                <p>Отдел сотрудничества: +33 1 99 00 00 03</p>
+                <span class="caption">Все номера демонстрационные.</span>
             </div>
         </div>
 
-        <div class="card">
-            <h2>Подробнее о генеральном директоре</h2>
-            <p>
-                Узнайте больше о руководителе нашей компании и его деятельности.
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+
+        {% elif extra == 'austria' %}
+
+        <span class="overline">OUR BRANCHES / AUSTRIA</span>
+        <h1>Филиал в <span class="text-gradient">Австрии</span></h1>
+        <p class="lead">Наш австрийский офис расположен в Вене.</p>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с австрийским филиалом:</p>
+                <a href="mailto:austriafilialcompany@gmail.com" class="text-accent">
+                    austriafilialcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Вена, Австрия</p>
+                <p>Демонстрационный адрес: 10 Kärntner Straße, Wien.</p>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
+            <div class="card">
+                <p>Основной номер: +43 000 000001</p>
+                <p>Отдел обслуживания: +43 000 000002</p>
+                <p>Отдел сотрудничества: +43 000 000003</p>
+                <span class="caption">Все номера демонстрационные.</span>
+            </div>
+        </div>
+
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+
+        {% elif extra == 'ukraine' %}
+
+        <span class="overline">OUR BRANCHES / UKRAINE</span>
+        <h1>Филиал в <span class="text-gradient">Украине</span></h1>
+        <p class="lead">Украинский филиал компании находится в Киеве.</p>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с украинским филиалом:</p>
+                <a href="mailto:ukrainefilialcompany@gmail.com" class="text-accent">
+                    ukrainefilialcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Киев, Украина</p>
+                <p>Демонстрационный адрес: 10 Khreshchatyk Street, Kyiv.</p>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
+            <div class="card">
+                <p>Основной номер: +380 00 000 00 01</p>
+                <p>Отдел обслуживания: +380 00 000 00 02</p>
+                <p>Отдел сотрудничества: +380 00 000 00 03</p>
+                <span class="caption">Все номера демонстрационные.</span>
+            </div>
+        </div>
+
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+
+        {% elif extra == 'us' %}
+
+        <span class="overline">OUR BRANCHES / USA</span>
+        <h1>Филиал в <span class="text-gradient">США</span></h1>
+        <p class="lead">Американское представительство компании находится в Нью-Йорке.</p>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>Связь с американским филиалом:</p>
+                <a href="mailto:usfilialcompany@gmail.com" class="text-accent">
+                    usfilialcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">ADDRESS</span>
+                <h3>Адрес офиса</h3>
+                <p>Нью-Йорк, США</p>
+                <p>Демонстрационный адрес: 10 Broadway, New York.</p>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2>Телефоны филиала</h2>
+            <div class="card">
+                <p>Основной номер: +1 202-555-0101</p>
+                <p>Отдел обслуживания: +1 202-555-0102</p>
+                <p>Отдел сотрудничества: +1 202-555-0103</p>
+                <span class="caption">Все номера демонстрационные.</span>
+            </div>
+        </div>
+
+        <a href="/contacts/" class="btn btn-secondary">Назад к контактам</a>
+
+
+        {% elif extra == 'map' %}
+
+        <div class="text-center animate-fade-up">
+            <span class="overline">OUR LOCATIONS</span>
+            <h1>География <span class="text-gradient">компании</span></h1>
+            <p class="lead">
+                Наши представительства работают в разных странах,
+                обеспечивая связь с клиентами и партнёрами.
             </p>
-            <a href="/management/director" class="btn btn-primary">
-                Подробнее
+        </div>
+
+        <div class="card card-glow mt-8 text-center">
+            <h2>Международная сеть</h2>
+            <p>
+                На данный момент компания представлена в пяти городах:
+                Париже, Вене, Киеве, Нью-Йорке и центральном офисе.
+            </p>
+            <span class="badge badge-success">5 LOCATIONS</span>
+        </div>
+
+        <div class="section-sm">
+            <h2 class="text-center">Наши офисы</h2>
+
+            <div class="grid grid-2 mt-6">
+
+                <div class="card">
+                    <span class="badge badge-accent">FRANCE</span>
+                    <h3>Париж</h3>
+                    <p>Французский филиал компании.</p>
+                    <a href="/contacts/france" class="btn btn-secondary">
+                        Контакты филиала
+                    </a>
+                    <p>
+                        <a href="https://www.openstreetmap.org/search?query=Paris%2C%20France"
+                           target="_blank" rel="noopener noreferrer" class="text-accent">
+                            Посмотреть на карте
+                        </a>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">AUSTRIA</span>
+                    <h3>Вена</h3>
+                    <p>Австрийский филиал компании.</p>
+                    <a href="/contacts/austria" class="btn btn-secondary">
+                        Контакты филиала
+                    </a>
+                    <p>
+                        <a href="https://www.openstreetmap.org/search?query=Vienna%2C%20Austria"
+                           target="_blank" rel="noopener noreferrer" class="text-accent">
+                            Посмотреть на карте
+                        </a>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">UKRAINE</span>
+                    <h3>Киев</h3>
+                    <p>Украинский филиал компании.</p>
+                    <a href="/contacts/ukraine" class="btn btn-secondary">
+                        Контакты филиала
+                    </a>
+                    <p>
+                        <a href="https://www.openstreetmap.org/search?query=Kyiv%2C%20Ukraine"
+                           target="_blank" rel="noopener noreferrer" class="text-accent">
+                            Посмотреть на карте
+                        </a>
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">USA</span>
+                    <h3>Нью-Йорк</h3>
+                    <p>Американское представительство компании.</p>
+                    <a href="/contacts/us" class="btn btn-secondary">
+                        Контакты филиала
+                    </a>
+                    <p>
+                        <a href="https://www.openstreetmap.org/search?query=New%20York%2C%20USA"
+                           target="_blank" rel="noopener noreferrer" class="text-accent">
+                            Посмотреть на карте
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <h3>Нужна дополнительная информация?</h3>
+            <p>Свяжитесь с центральным офисом компании.</p>
+            <a href="/contacts/" class="btn btn-primary">
+                Все контакты
             </a>
         </div>
+
+
+        {% else %}
+
+        <div class="text-center animate-fade-up">
+            <span class="overline">GET IN TOUCH</span>
+            <h1>Свяжитесь с <span class="text-gradient">нами</span></h1>
+            <p class="lead">Мы всегда открыты для сотрудничества и новых возможностей.</p>
+        </div>
+
+        <div class="grid grid-2 mt-8">
+
+            <div class="card card-glow">
+                <span class="badge badge-accent">EMAIL</span>
+                <h3>Электронная почта</h3>
+                <p>По общим вопросам обращайтесь к нашей центральной команде.</p>
+                <a href="mailto:mainemailcompany@gmail.com" class="text-accent">
+                    mainemailcompany@gmail.com
+                </a>
+            </div>
+
+            <div class="card">
+                <span class="badge badge-violet">PHONE</span>
+                <h3>Телефон</h3>
+                <p>Центральный демонстрационный номер компании:</p>
+                <p class="text-accent">+49 000 0000000</p>
+                <span class="caption">Номер указан исключительно для демонстрации.</span>
+            </div>
+
+        </div>
+
+        <div class="section-sm">
+            <h2 class="text-center">Наши филиалы</h2>
+            <p class="text-center">Компания представлена в нескольких странах.</p>
+
+            <div class="grid grid-3 mt-6">
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Франция</h4>
+                    <p>Филиал в Париже.</p>
+                    <a href="/contacts/france" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Австрия</h4>
+                    <p>Филиал в Вене.</p>
+                    <a href="/contacts/austria" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge badge-accent">EUROPE</span>
+                    <h4>Украина</h4>
+                    <p>Филиал в Киеве.</p>
+                    <a href="/contacts/ukraine" class="btn btn-secondary">Подробнее</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card text-center mt-6">
+            <h3>Расположение наших офисов</h3>
+            <p>Посмотрите расположение филиалов компании.</p>
+            <a href="/contacts/map" class="btn btn-primary">Посмотреть карту</a>
+        </div>
+
+        {% endif %}
+
     </div>
 </section>
 {% endblock %}
