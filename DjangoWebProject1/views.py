@@ -1,6 +1,6 @@
 from django.shortcuts import render # замість HttpResponse 
 import requests
-
+from form.form import ContactForm
 
 def main_page(request):
     return render(request, 'main.html')
@@ -24,5 +24,14 @@ def contacts(request, extra=None):
         'extra': extra
     })
 
+def form(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
 
+        if form.is_valid():
+            return redirect('home')
+    else:
+        form = ContactForm()
+
+    return render(request, 'form/form.html', {'form': form})
 

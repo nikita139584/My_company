@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import main_page, news, management,about,contacts
+from .views import main_page, news, management,about,contacts,form
 
 urlpatterns = [
     path('', main_page, name='main'),
@@ -14,6 +14,7 @@ urlpatterns = [
 
     path('contacts/', views.contacts, name='contacts'),
 
+    path('form/', views.form, name='form'),
 
     path('news/<path:extra>', views.news, name='news-extra'),
     path('management/<path:extra>', views.management, name='management-extra'),

@@ -30,16 +30,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="company\models.py" />
     <Compile Include="DjangoWebProject1\views.py" />
+    <Compile Include="form\form.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoWebProject1\settings.py" />
     <Compile Include="DjangoWebProject1\urls.py" />
     <Compile Include="DjangoWebProject1\wsgi.py" />
-    <Compile Include="middleware\custom.py" />
+    <Compile Include="form\custom.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DjangoWebProject1\" />
-    <Folder Include="middleware\" />
+    <Folder Include="form\" />
+    <Folder Include="company\" />
     <Folder Include="static\" />
     <Folder Include="static\css\" />
     <Folder Include="templates\" />
@@ -47,6 +50,7 @@
     <Folder Include="templates\about\" />
     <Folder Include="templates\contacts\" />
     <Folder Include="templates\management\" />
+    <Folder Include="templates\form\" />
     <Folder Include="templates\news\" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +73,7 @@
     <Content Include="templates\false\404.html" />
     <Content Include="templates\about\about.html" />
     <Content Include="templates\contacts\contacts.html" />
+    <Content Include="templates\form\form.html" />
     <Content Include="templates\management\management.html" />
     <Content Include="templates\news\news.html" />
     <Content Include="templates\main.html" />
